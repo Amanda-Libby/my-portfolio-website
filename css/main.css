@@ -87,6 +87,231 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* General Styles */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 1em;
+  /* font-family: 'Open Sans', sans-serif; */
+  color: black;
+  text-align: left;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  /* color: #e2e3ed; */
+  text-decoration: none;
+}
+
+h2 {
+  /* font-family: 'Open Sans', sans-serif; */
+  font-weight: 500;
+  /* font-size: 1.875em; */
+}
+
+h3,
+h4 {
+  /* font-family: 'Poppins', sans-serif; */
+  font-weight: 500;
+  /* font-size: 1.125em; */
+  margin: 20px 0;
+}
+
+p { 
+  /* font-size: 0.875em; */ 
+}
+
+img {
+  
+}
+
+address {
+  font-style: normal;
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: 50px;
+}
+
+/* ------ Base Header - Footer ------ */
+
+header, 
+footer {
+  
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header {
+  padding: 15px 0;
+}
+
+header .content-wrapper {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header nav {
+  width: 60%;
+  /* font-size: 1.125em; */
+  font-weight: 700;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+header nav ul li {
+ /* font-size: 1.125em; */
+}
+
+footer {
+  text-align: center;
+  flex-direction: column;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+}
+
+footer .contact {
+  margin-bottom: 50px;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+footer .social p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #527158;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+footer .copyright {
+  margin: 20px 0;
+}
+
+/* ------ Mobile Styles - Homepage ------- */
+
+/* Hero Area */
+
+.hero-area { /* look at this one */
+  background-image: url('../img/jake-melara-30679-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: row wrap; 
+}
+
+.hereo-area h1 { /* look at this one */
+  font-size: 2.25em; 
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/* Aside */
+
+aside { /* look at this one */
+  background-color: #527158;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/* Features */
+
+.features {
+  background: url('../img/rawpixel-800820-unsplash1.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: row wrap;
+}
+
+.features h2 { /* look at this one */
+  margin-bottom: 40px;
+}
+
+.features article { /* look at this one */
+  width: 63%;
+  margin: 30px 0;
+}
+
+.features .features-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.features p {
+  text-align: center;
+  margin: 0;
+}
+
+.features i { /* look at this one */
+	font-size: 4em;
+  margin-bottom: 40px;
+}
+
+/* Reviews */
+
+.reviews {
+  background-color: #2a423a;
+  display: flex;
+  justify-content: center;
+  align-items: row wrap;
+}
+
+.reviews h2 { /* look at this one */
+  margin-bottom: 30px;
+  line-height: 1;
+}
+
+.reviews h3 { /* look at this one */
+  width: 55%;
+  margin: 20px 0;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
