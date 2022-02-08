@@ -137,9 +137,6 @@ address {
 /* ------ Base Header - Footer ------ */
 
 header, 
-#projects,
-#skills,
-#about,
 footer {
   display: flex;
   justify-content: center;
@@ -179,11 +176,15 @@ header nav ul {
 
 header nav ul li {
   font-weight: 500;
+  padding-top: 10px;
 }
 
 .contact-button {
   background-color: #F8D697;
-  padding: 10px 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   border-radius: 30px;
 }
 
@@ -242,36 +243,28 @@ footer .copyright {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
 }
 
-#projects h1 { 
+.progect-pieces {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
+}
+
+#projects h1 { 
   padding-top: 80px;
   padding-bottom: 20px;
 }
 
 #projects h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
   padding-top: 20px;
   padding-bottom: 40px;
 }
 
 .project-description {
   padding-bottom: 30px;
-}
-
-#projects img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
 .live-page {
@@ -282,10 +275,6 @@ footer .copyright {
   text-transform: uppercase;
   margin-top: 40px;
   margin-bottom: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
   width: 20%;
 }
 
@@ -293,8 +282,16 @@ footer .copyright {
 
 #skills { 
   display: flex;
-  text-align: center;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.skill-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
 }
 
 #skills h1 {
@@ -311,31 +308,34 @@ footer .copyright {
   margin-top: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
+  width: 100%;
 }
 
 /* about */
 
-#about img {
+#about {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
+}
+
+.about-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+#about img {
   margin-top: 160px;
 }
 
 #about h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
   padding-top: 40px;
 }
 
 #about h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
   padding-top: 40px;
 }
 
