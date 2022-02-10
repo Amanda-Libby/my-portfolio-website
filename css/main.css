@@ -108,11 +108,12 @@ ol {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #453E4F;
 }
 
 h1, h2, h3 {
   font-family: 'Alike';
+  color: #453E4F;
 }
 
 p { 
@@ -120,10 +121,11 @@ p {
 }
 
 img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+  width: 100%;
+}
+
+figure {
+  margin: 0;
 }
 
 address {
@@ -175,7 +177,7 @@ header nav ul {
 }
 
 header nav ul li {
-  font-weight: 500;
+  font-weight: bold;
   padding-top: 10px;
 }
 
@@ -246,7 +248,7 @@ footer .copyright {
   flex-flow: column wrap;
 }
 
-.progect-pieces {
+.project-piece {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -256,11 +258,22 @@ footer .copyright {
 #projects h1 { 
   padding-top: 80px;
   padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
 }
 
 #projects h2 {
   padding-top: 20px;
   padding-bottom: 40px;
+}
+
+.project-details {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-flow: column wrap;
 }
 
 .project-description {
@@ -269,13 +282,16 @@ footer .copyright {
 
 .live-page {
   background-color: #453E4F;
-  padding: 10px 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   border-radius: 30px;
   color: white;
   text-transform: uppercase;
   margin-top: 40px;
   margin-bottom: 40px;
-  width: 20%;
+  align-items: center;
 }
 
 /* Skills */
@@ -305,6 +321,7 @@ footer .copyright {
 #skills h3 {
   text-transform: uppercase;
   background-color: #F8D697;
+  text-align: center;
   margin-top: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -341,6 +358,13 @@ footer .copyright {
 
 #about p {
   padding-top: 40px;
+}
+
+.about-details {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-flow: column wrap;
 }
 
 .social-icons {
@@ -437,8 +461,41 @@ footer .copyright {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* Tablet styles */
+
+  header nav {
+    width: 90%;
+  }
+
+  header h2 {
+    width:70%;
+    text-align: center;
+  }
+
+  .project-piece {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 50%;
+  }
+
+  #skills h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 50%;
+    
+  }
+
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    
+  }
 }
 
 @media print,

@@ -20,10 +20,13 @@
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
-  <link href="https://fonts.googleapis.com/css2?family=Alike&amp;family=Open+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:500,700" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/e4d4fee51b.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/fb50a41140.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alike&display=swap" rel="stylesheet">
+
 </head>
 
 <!--Use the Responsive Website project to help with the html and css and so I don't have to do it all again.-->
@@ -50,7 +53,7 @@
       </nav>
       <div class="introduction">
         <h1>Hi there, I'm Amanda Libby!</h1>
-        <h2> I’m a front end developer who creates beautiful websites in Washington, DC</h2>
+        <h2> I’m a front end developer who creates beautiful and memorable websites in Washington, DC</h2>
       </div>
     </div>
   </header>
@@ -58,18 +61,20 @@
   <main>
     <section id="projects">
       <div class="content-wrapper">
-        <h1 class="project-header">Projects</h1>
+        <h1 class="project-header">Projects</h1> 
         <div>
           <div class="project-piece">
             <figure>
-              <a href="https://b7o80.csb.app/"><img src="img/super-sticky-notes.png" alt="project photo" width="500" height="300"></a>
+              <a href="https://b7o80.csb.app/"><img src="img/super-sticky-note.png" alt="project photo" width="500" height="300"></a>
             </figure>
             <h2>Super Sticky Notes</h2>
-            <p class="project-description">
-              A greenfield project to create a Sticky Notes web app. It uses multiple components to build a class sticky notes UI with the ability to add, edit, delete and search for notes.
-            </p>
-            <p><strong>Skills: </strong>React, JSX, Components<br>
-            <strong>Tools: </strong>CodeSandBox, Props, State</p>
+            <div class="project-details">
+              <p class="project-description">
+                A greenfield project to create a Sticky Notes web app. It uses multiple components to build a class sticky notes UI with the ability to add, edit, delete and search for notes.
+              </p>
+              <p><strong>Skills: </strong>React, JSX, Components<br>
+              <strong>Tools: </strong>CodeSandBox, Props, State</p>
+            </div>
             <p class="live-page">Live Page</p>
           </div>
           <div class="project-piece">
@@ -77,11 +82,13 @@
               <a href="https://amanda-libby.github.io/github-repo-gallery/"><img src="img/github-repo-gallery.png" alt="project photo" width="500" height="300"></a>
             </figure>
             <h2>GitHub Repo Galllery</h2>
-            <p class="project-description">
-              This project uses GitHub’s API to pull data from my GitHub repository to create a gallery of my repos. Visitors to the site can click on the repos to see more details and a link to the repo.
-            </p>
-            <p><strong>Skills: </strong>JavaScript<br>
-            <strong>Tools: </strong>REST API, GitHubt Pages</p>
+            <div class="project-details">
+              <p class="project-description">
+                This project uses GitHub’s API to pull data from my GitHub repository to create a gallery of my repos. Visitors to the site can click on the repos to see more details and a link to the repo.
+              </p>
+              <p><strong>Skills: </strong>JavaScript<br>
+              <strong>Tools: </strong>REST API, GitHubt Pages</p>
+            </div>
             <p class="live-page">Live Page</p>
           </div>
           <div class="project-piece">
@@ -89,11 +96,13 @@
               <a href="https://amanda-libby.github.io/unplugged-retreat/"><img src="img/unplugged-homepage.png" alt="project photo" width="500" height="300"></a>
             </figure>
             <h2>Unplugged Website</h2>
-            <p class="project-description">
-              A multi-page responsive website coded with Flexbox. This versatile design has several sections, including a Cards design pattern, that can be repurposed for different sites.
-            </p>
-            <p><strong>Skills: </strong>HTML, CSS, Flexbox<br>
-            <strong>Tools: </strong>Photoshop, Chrome DevTools, GitHub Pages</p>
+            <div class="project-details">
+              <p class="project-description">
+                A multi-page responsive website coded with Flexbox. This versatile design has several sections, including a Cards design pattern, that can be repurposed for different sites.
+              </p>
+              <p><strong>Skills: </strong>HTML, CSS, Flexbox<br>
+              <strong>Tools: </strong>Photoshop, Chrome DevTools, GitHub Pages</p>
+            </div>
             <p class="live-page">Live Page</p>
           </div>
         </div>
@@ -133,9 +142,11 @@
             <img src="img/IMG_4275.jpeg" alt="professional photo of me" width="400" height="500">
           </figure>
           <h1>Hi! I'm Amanda Libby.</h1>
-          <h2> I’m a front end developer who creates beautiful websites in Washington, DC.</h2>
-          <p>I discovered the joys of web development after I made the decision to change careers a few years after graduating college.  I was quite surprised at how much I enjoy the process and don’t ever want to look back.  When I’m not working on my next coding project, I am cooking the best tacos you’ll ever eat and playing dungeons and dragons with friends.</p>
-          <p><strong>I can't wait to work with you!</strong></p>
+          <div class="about-details">
+            <h2> I’m a front end developer who creates beautiful websites in Washington, DC.</h2>
+            <p>I discovered the joys of web development after I made the decision to change careers a few years after graduating college.  I was quite surprised at how much I enjoy the process and don’t ever want to look back.  When I’m not working on my next coding project, I am cooking the best tacos you’ll ever eat and playing dungeons and dragons with friends.</p>
+            <p><strong>I can't wait to work with you!</strong></p>
+          </div>
         </div>
       </div>
     </section>
@@ -143,10 +154,10 @@
  
   <footer>
     <div class="content-wrapper">
+      <div class="connect">
+        <h2>Let's Connect</h2>
+      </div>
       <div class="footer-content">
-        <div class="connect">
-          <h2>Let's Connect</h2>
-        </div>
         <div class="contact">
           <h3>Hire me</h3>
           <address>
