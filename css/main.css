@@ -138,14 +138,18 @@ address {
 
 /* ------ Base Header - Footer ------ */
 
-header {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: #e8eff7;
+header,
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
+}
+
+header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #e8eff7;
 }
 
 header .content-wrapper {
@@ -169,6 +173,7 @@ header nav ul {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  margin: 0;
 }
 
 header nav ul li {
@@ -185,6 +190,7 @@ header nav ul li {
   border-radius: 30px;
 }
 
+
 .introduction {
   display: flex;
   justify-content: center;
@@ -193,8 +199,10 @@ header nav ul li {
   align-content: center;
 }
 
+
 header h1 {
   padding-bottom: 30px;
+  padding-top: 60px;
 }
 
 header h2 {
@@ -202,7 +210,6 @@ header h2 {
 }
 
 footer {
-  
   text-align: center;
   flex-direction: column;
   background-color: #e8eff7;
@@ -220,9 +227,9 @@ footer h3 {
 
 footer .social-icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  font-size: 1.5em;
+  font-size: 2.0em;
 }
 
 footer .social p {
@@ -246,7 +253,14 @@ footer .copyright {
   flex-flow: column wrap;
 }
 
-#projects .content-wrapper {
+.project-flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.project-header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -258,7 +272,7 @@ footer .copyright {
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
-}
+} /* ask if I need the flex styles on the project piece section */
 
 
 #projects h1 { 
@@ -294,11 +308,22 @@ footer .copyright {
   margin-top: 40px;
   margin-bottom: 40px;
   align-items: center;
+  text-align: center;
+  width: 30%;
 }
 
 /* Skills */
 
 #skills { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  background-color: #e8eff7;
+  padding-bottom: 80px;
+}
+
+.skills-header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -333,6 +358,13 @@ footer .copyright {
 /* about */
 
 #about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.about-flexbox {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -466,6 +498,10 @@ footer .copyright {
 @media only screen and (min-width: 768px) {
   /* Tablet styles */
 
+  .content-wrapper {
+    width: 80%;
+  }
+
   header nav {
     width: 90%;
   }
@@ -477,23 +513,242 @@ footer .copyright {
     flex-flow: column wrap;
   }
 
+  header h1 {
+    padding-bottom: 40px;
+    padding-top: 80px;
+  }
+
   header h2 {
-    width:70%;
+    width: 70%;
+    padding-bottom: 40px;
+  }
+
+  #projects h1 {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   .project-flexbox {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
   }
 
+  .project-piece {
+    width: 45%;
+  }
+
+  #projects figure {
+    width: 90%;
+  }
+
+  #projects h2 {
+    padding-bottom: 20px;
+  }
+
+  .live-page {
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+
+  #skills {
+    padding-bottom: 80px;
+  }
+
+  .skills-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+  }
+
+  .skills-flexbox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  .skills-items {
+    width: 45%;
+  }  
+
+  #skills h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  #about {
+    padding: 0;
+  }
+
+  #about img {
+    margin-top: 120px;
+  }
+
+  #about h1 {
+    padding-bottom: 0;
+    padding-top: 80px;
+    font-size: 3.5em;
+  }
+
+  #about h2 {
+    padding-bottom: 20px;
+  }
+
+  #about p {
+    padding: 0;
+  }
+
+  footer {
+    margin-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  footer h1 {
+    padding-bottom: 60px;
+    padding-top: 120px;
+  }
 
   footer .footer-content {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
   }
+
+  footer .social-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .copyright {
+    padding-top: 60px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Desktop styles */
+
+  header nav {
+    width: 100%;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    flex-flow: row wrap;
+    margin-top: 30px;
+  }
+  
+  header nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    margin: 0;
+  }
+
+  header nav ul li {
+    margin-left: 20px;
+  }
+
+  header h1 {
+    font-size: 3.7em;
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+
+  header h2 {
+    font-size: 2em;
+    padding-top: 0;
+    padding-bottom: 80px;
+  }
+
+  #projects h1 {
+    font-size: 2.5em;
+  }
+
+  .project-piece {
+    width: 30%;
+  }
+
+  #projects figure {
+    width: 100%;
+  }
+
+  .live-page {
+    margin-bottom: 60px;
+  }
+
+  #skills h1 {
+    font-size: 2.5em;
+    margin-top: 60px;
+  }
+
+  .skills-items {
+    width: 30%;
+  } 
+
+  .about-flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  
+  .about-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  .about-picture {
+    width: 40%;
+  }
+
+  #about img {
+    width: 300px; 
+    height: 400px;
+  }
+
+  .about-notes {
+    width: 60%;
+  }
+
+  #about h1 {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  #about h2 {
+    font-size: 2em;
+    padding-top: 0;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+
+  #about p {
+    font-size: 1.2em;
+  }
+
+  footer .content-wrapper {
+    width: 70%;
+  }
+
+  footer h1 {
+    font-size: 2.5em;
+  }
+
+  footer p {
+    font-size: 1.2em;
+  }
+
+  .copyright {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
 }
 
 @media print,
