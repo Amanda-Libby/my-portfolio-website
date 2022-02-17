@@ -104,6 +104,7 @@ body {
 ul,
 ol {
   list-style-type: none;
+  padding: 0;
 }
 
 a {
@@ -174,6 +175,7 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   margin: 0;
+  padding-left: 0;
 }
 
 header nav ul li {
@@ -207,6 +209,8 @@ header h1 {
 
 header h2 {
   padding-bottom: 30px;
+  line-height: 1.5;
+  
 }
 
 footer {
@@ -388,6 +392,8 @@ footer .copyright {
 
 #about h2 {
   padding-top: 40px;
+  line-height: 1.5;
+  font-weight: 400;
 }
 
 #about p {
@@ -519,7 +525,7 @@ footer .copyright {
   }
 
   header h2 {
-    width: 70%;
+    width: 63%;
     padding-bottom: 40px;
   }
 
@@ -662,6 +668,7 @@ footer .copyright {
     font-size: 2em;
     padding-top: 0;
     padding-bottom: 80px;
+    width: 70%;
   }
 
   #projects h1 {
@@ -710,6 +717,8 @@ footer .copyright {
   #about img {
     width: 300px; 
     height: 400px;
+    padding-top: 0;
+    padding-bottom: 80px;
   }
 
   .about-notes {
@@ -742,6 +751,11 @@ footer .copyright {
 
   footer p {
     font-size: 1.2em;
+  }
+
+  footer .social-icons {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .copyright {
