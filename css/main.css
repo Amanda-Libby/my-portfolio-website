@@ -117,10 +117,6 @@ h1, h2, h3 {
   color: #453E4F;
 }
 
-p { 
-  /* font-size: 0.875em; */ 
-}
-
 img {
   width: 100%;
 }
@@ -210,7 +206,7 @@ header h1 {
 header h2 {
   padding-bottom: 30px;
   line-height: 1.5;
-  
+  text-align: center;
 }
 
 footer {
@@ -276,23 +272,30 @@ footer .copyright {
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
-} /* ask if I need the flex styles on the project piece section */
+} 
 
 
-#projects h1 { 
+#projects h2 { 
   padding-top: 80px;
   padding-bottom: 20px;
+  font-size: 2em;
 }
 
-#projects h2 {
+#projects h3 {
   padding-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
+  font-size: 1.2em;
+}
+
+#projects img {
+  width: 600px; 
+  height: 300px;
 }
 
 .project-details {
   display: flex;
   justify-content: center;
-  align-items: left;
+  align-items: flex-start;
   flex-flow: column wrap;
 }
 
@@ -300,12 +303,12 @@ footer .copyright {
   padding-bottom: 30px;
 }
 
-.live-page {
+div .live-page {
   background-color: #453E4F;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
   border-radius: 30px;
   color: white;
   text-transform: uppercase;
@@ -313,7 +316,7 @@ footer .copyright {
   margin-bottom: 40px;
   align-items: center;
   text-align: center;
-  width: 30%;
+  width: 70%;
 }
 
 /* Skills */
@@ -341,15 +344,17 @@ footer .copyright {
   flex-flow: column wrap;
 }
 
-#skills h1 {
-  padding-top: 60px;
-}
-
 #skills h2 {
-  padding-top: 40px;
+  padding-top: 60px;
+  font-size: 2em;
 }
 
 #skills h3 {
+  padding-top: 0;
+  font-size: 1.2em;
+}
+
+#skills h4 {
   text-transform: uppercase;
   background-color: #F8D697;
   text-align: center;
@@ -357,6 +362,8 @@ footer .copyright {
   padding-top: 15px;
   padding-bottom: 15px;
   width: 100%;
+  line-height: 1.5;
+  font-weight: 200;
 }
 
 /* about */
@@ -384,31 +391,61 @@ footer .copyright {
 
 #about img {
   margin-top: 160px;
-}
-
-#about h1 {
-  padding-top: 40px;
+  width: 400px;
+  height: 500px;
 }
 
 #about h2 {
-  padding-top: 40px;
+  padding-top: 10px;
+  font-size: 1.7em;
+}
+
+#about h3 {
+  padding-top: 10px;
   line-height: 1.5;
   font-weight: 400;
 }
 
 #about p {
-  padding-top: 40px;
+  padding-top: 10px;
 }
 
 .about-details {
   display: flex;
   justify-content: center;
-  align-items: left;
+  align-items: flex-start;
   flex-flow: column wrap;
 }
 
-.social-icons {
+.about-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+#contact h2 {
+  font-size: 1.7em;
+}
+
+#contact h3 {
+  font-size: 1.5em;
+}
+
+#contact p {
+  padding-bottom: 0;
+}
+
+.social-icons p {
   color: #453E4F;
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
+}
+
+.copyright {
+  padding-top: 0;
+  margin-top: 0;
 }
 
 
@@ -522,14 +559,15 @@ footer .copyright {
   header h1 {
     padding-bottom: 40px;
     padding-top: 80px;
+    font-size: 2.5em;
   }
 
   header h2 {
-    width: 63%;
+    width: 70%;
     padding-bottom: 40px;
   }
 
-  #projects h1 {
+  #projects h2 {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -549,7 +587,12 @@ footer .copyright {
     width: 90%;
   }
 
-  #projects h2 {
+  #projects img {
+    width: 300px; 
+    height: 200px;
+  }
+
+  #projects h3 {
     padding-bottom: 20px;
   }
 
@@ -580,7 +623,7 @@ footer .copyright {
     width: 45%;
   }  
 
-  #skills h2 {
+  #skills h3 {
     padding-top: 10px;
     padding-bottom: 10px;
   }
@@ -593,14 +636,15 @@ footer .copyright {
     margin-top: 120px;
   }
 
-  #about h1 {
+  #about h2 {
     padding-bottom: 0;
     padding-top: 80px;
-    font-size: 3.5em;
+    font-size: 2em;
   }
 
-  #about h2 {
+  #about h3 {
     padding-bottom: 20px;
+    font-size: 1.3em;
   }
 
   #about p {
@@ -612,9 +656,10 @@ footer .copyright {
     padding-bottom: 40px;
   }
 
-  footer h1 {
-    padding-bottom: 60px;
+  #contact h2 {
+    padding-bottom: 40px;
     padding-top: 120px;
+    font-size: 2em;
   }
 
   footer .footer-content {
@@ -642,7 +687,7 @@ footer .copyright {
     text-transform: uppercase;
     display: flex;
     justify-content: right;
-    align-items: right;
+    align-items: flex-end;
     flex-flow: row wrap;
     margin-top: 30px;
   }
@@ -671,7 +716,7 @@ footer .copyright {
     width: 70%;
   }
 
-  #projects h1 {
+  #projects h2 {
     font-size: 2.5em;
   }
 
@@ -687,7 +732,7 @@ footer .copyright {
     margin-bottom: 60px;
   }
 
-  #skills h1 {
+  #skills h2 {
     font-size: 2.5em;
     margin-top: 60px;
   }
@@ -710,8 +755,19 @@ footer .copyright {
     flex-flow: row wrap;
   }
 
+  .about-description {
+    width: 60%;
+  }
+
   .about-picture {
     width: 40%;
+  }
+
+  .about-title {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-flow: row wrap;
   }
 
   #about img {
@@ -721,17 +777,13 @@ footer .copyright {
     padding-bottom: 80px;
   }
 
-  .about-notes {
-    width: 60%;
-  }
-
-  #about h1 {
+  #about h2 {
     padding-top: 0;
     padding-bottom: 0;
   }
 
-  #about h2 {
-    font-size: 2em;
+  #about h3 {
+    font-size: 1.5em;
     padding-top: 0;
     line-height: 1.5;
     font-weight: 400;
@@ -745,7 +797,7 @@ footer .copyright {
     width: 70%;
   }
 
-  footer h1 {
+  #contact h2 {
     font-size: 2.5em;
   }
 
