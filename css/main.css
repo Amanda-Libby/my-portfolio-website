@@ -682,8 +682,19 @@ div .live-page {
 @media only screen and (min-width: 1200px) {
   /* Desktop styles */
 
+  header .content-wrapper {
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-flow: column wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   header nav {
     width: 100%;
+    width: 45%;
     text-transform: uppercase;
     display: flex;
     justify-content: right;
