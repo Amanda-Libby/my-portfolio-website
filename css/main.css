@@ -121,8 +121,9 @@ img {
   width: 100%;
 }
 
-figure {
+figure a {
   margin: 0;
+  display: block;
 }
 
 address {
@@ -293,8 +294,7 @@ footer .copyright {
 }
 
 #projects img {
-  width: 600px; 
-  height: 300px;
+  object-fit: contain;
 }
 
 .project-details {
@@ -396,8 +396,8 @@ div .live-page {
 
 #about img {
   margin-top: 160px;
-  width: 400px;
-  height: 500px;
+  max-height: 500px;
+  max-width: 400px;
 }
 
 #about h2 {
@@ -588,8 +588,10 @@ div .live-page {
   }
 
   #projects img {
+    /*
     width: 300px; 
     height: 200px;
+    */
   }
 
   #projects h3 {
@@ -652,8 +654,8 @@ div .live-page {
   }
 
   footer {
-    margin-top: 60px;
-    padding-bottom: 40px;
+    margin-top: 40px;
+    padding-bottom: 0;
   }
 
   #contact h2 {
@@ -787,8 +789,10 @@ div .live-page {
   }
 
   #about img {
+   /*
     width: 300px; 
     height: 400px;
+  */
     padding-top: 0;
     padding-bottom: 80px;
   }
