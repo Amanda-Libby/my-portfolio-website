@@ -227,15 +227,20 @@ footer h3 {
 
 footer .social-icons {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   font-size: 2.0em;
 }
 
-footer .social p {
+footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #453E4F;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0;
+  font-size: 1em;
 }
 
 footer .copyright {
@@ -424,6 +429,8 @@ div .live-page {
   flex-flow: column wrap;
 }
 
+/* contact */
+
 #contact h2 {
   font-size: 1.7em;
 }
@@ -434,13 +441,6 @@ div .live-page {
 
 #contact p {
   padding-bottom: 0;
-}
-
-.social-icons p {
-  color: #453E4F;
-  padding: 0;
-  margin: 0;
-  font-size: 1em;
 }
 
 .copyright {
@@ -672,6 +672,7 @@ div .live-page {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0;
   }
 
   .copyright {
@@ -681,6 +682,10 @@ div .live-page {
 
 @media only screen and (min-width: 1200px) {
   /* Desktop styles */
+
+  .content-wrapper {
+    max-width: 1200px;
+  }
 
   header .content-wrapper {
     margin: 0;
@@ -819,6 +824,7 @@ div .live-page {
   footer .social-icons {
     margin-top: 0;
     margin-bottom: 0;
+    padding: 0;
   }
 
   .copyright {
