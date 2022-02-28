@@ -278,6 +278,7 @@ footer .copyright {
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
+  width: 90%;
 } 
 
 
@@ -294,7 +295,12 @@ footer .copyright {
 }
 
 #projects img {
+<<<<<<< HEAD
   object-fit: contain;
+=======
+  width: 100%; 
+  height: 300px;
+>>>>>>> gh-pages
 }
 
 .project-details {
@@ -394,10 +400,19 @@ div .live-page {
   flex-flow: column wrap;
 }
 
+.about-picture {
+  width: 90%;
+}
+
 #about img {
   margin-top: 160px;
+<<<<<<< HEAD
   max-height: 500px;
   max-width: 400px;
+=======
+  width: 100%;
+  height: 500px;
+>>>>>>> gh-pages
 }
 
 #about h2 {
